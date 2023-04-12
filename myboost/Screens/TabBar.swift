@@ -17,10 +17,16 @@ struct HomeView: View {
                 Image(systemName: "house")
                 Text("Home")
             }
-            Text("Profil").tabItem{
+            NavigationView{
+                            ProfileSettigsView()
+                        }.tabItem{
+                            Image(systemName: "person")
+                            Text("Profil")
+                        }
+           /* Text("Profil").tabItem{
                 Image(systemName: "person")
                 Text("Profil")
-            }
+            }*/
             Text("Profil").tabItem{
                 Image(systemName: "")
                 Text("Profil")

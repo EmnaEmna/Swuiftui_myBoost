@@ -14,7 +14,8 @@ class SignupViewModel: ObservableObject {
     @Published var confirmPw = ""
     
     // MARK: - Validation Functions
-    
+    func EditProfile(completed: @escaping (Bool, Any?) -> Void)  {
+    }
     func passwordsMatch() -> Bool {
         password == confirmPw
     }
